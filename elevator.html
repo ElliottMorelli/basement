@@ -25,7 +25,7 @@
           height: '845',
           videoId: '4_NapqcqKRo',
           playerVars: { 
-        'controls': 0, },
+        'controls': 0,'autoplay':1},
           events: {
             onReady: onPlayerReady,
             onStateChange: onPlayerStateChange
@@ -39,7 +39,6 @@
     function onPlayerReady(event) {
         event.target.playVideo();
         
-        requestFullScreen.bind(iframe)();
         
     }
 
