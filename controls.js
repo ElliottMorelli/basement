@@ -13,12 +13,12 @@ async function loadBuffer(bufferURL) {
   }
 
   document.addEventListener("DOMContentLoaded", function(event) {
-    playBirdAudio();
+    playAudio();
 })
 
 
 
-async function playBirdAudio(){
+async function playAudio(){
     audioCtx = new AudioContext();
 
 
