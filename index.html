@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <style>
+            #background {
+                object-fit: cover;
+                width: 100vw;
+                height: 100vh;
+                position: fixed;
+                top: 0;
+                left: 0;
+            }
+            .switch{
+                width: 120;
+                height: auto;
+                position: fixed;
+                top: 300;
+                left: 400;
+                z-index: 2;
+            }
+            .img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 500px;
+                height: 500px;
+                margin-top: 100px; /* Half the height */
+                margin-left: -250px; 
+                /* Half the width */
+            }
+            .clickable:hover {
+                cursor: pointer;
+            }
+        </style>
+        <script src = "./controls.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+  
+        <script src="./controls.js"></script>
+    </head>
+    <body>
+        <img src="./img/door2.png" id="background" usemap="#door">
+
+
+        <map name = "door">
+            <area  shape = "square" class="clickable" coords = "1150,240,3512,2020" alt = "door"  onclick="enterEle()" target = "_blank" />
+         </map>
+    </body>
+      
+
+</html>
